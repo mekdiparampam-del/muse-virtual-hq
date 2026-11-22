@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#182235" />
+  <title>MUSE Virtual HQ</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="hud">
+      <div class="brand"><span class="lamp"></span><div><b>MUSE HQ</b><small>VIRTUAL OFFICE</small></div></div>
+      <div class="room-pill" id="roomName">LOBBY</div>
+      <button id="mapBtn" class="hud-btn">MAP</button>
+    </div>
+    <div id="crosshair">+</div>
+    <div id="hint">Gunakan joystick untuk berjalan</div>
+    <div id="dialog" class="hidden">
+      <div class="dialog-card">
+        <div class="dialog-top"><span id="npcRole">STAFF</span><button id="closeDialog">✕</button></div>
+        <h2 id="npcName">Bongoy</h2>
+        <p id="npcLine">Selamat datang di kantor!</p>
+        <div class="dialog-actions">
+          <button id="talkBtn">Ajak ngobrol</button>
+          <button id="byeBtn" class="secondary">Sampai nanti</button>
+        </div>
+      </div>
+    </div>
+    <div id="mapPanel" class="hidden">
+      <div class="map-card">
+        <div class="dialog-top"><b>DENAH KANTOR</b><button id="closeMap">✕</button></div>
+        <div class="map-grid">
+          <div>LOBBY</div><div>OPEN OFFICE</div><div>MEETING</div><div>PANTRY</div><div>DIRECTOR</div>
+        </div>
+        <small>Prototype: area akan dibuka bertahap.</small>
+      </div>
+    </div>
+    <div id="controls">
+      <div id="joystick"><div id="stick"></div></div>
+      <div class="right-controls">
+        <button id="interactBtn" class="action-btn">INTERAKSI</button>
+        <div class="look-note">Geser sisi kanan layar<br/>untuk melihat sekitar</div>
+      </div>
+    </div>
+    <div id="startScreen">
+      <div class="start-card">
+        <div class="pixel-logo">M</div>
+        <p class="eyebrow">VIRTUAL OFFICE SIMULATION</p>
+        <h1>MUSE<br/>VIRTUAL HQ</h1>
+        <p class="intro">Masuk ke kantor. Kenali pegawai. Nikmati kehidupan kantor virtual.</p>
+        <button id="enterBtn">MASUK KANTOR</button>
+        <small>Prototype MVP · First-person pixel style</small>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
